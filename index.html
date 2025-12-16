@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single File Example</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML -->
+    <h1>My First Web Page</h1>
+    <p id="text">Click the button to change this text</p>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <!-- JavaScript -->
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Text changed using JavaScript!";
+        }
+    </script>
+
+</body>
+</html>
